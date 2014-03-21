@@ -1,0 +1,12 @@
+{
+  "name": "Scroll Progress",
+  "version": "0.0.1",
+  "description": "Shows the scroll progress of current page",
+  "permissions": ["*://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["scroll_progress.js"]
+    }
+  ]
+}
