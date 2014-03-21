@@ -1,3 +1,9 @@
+// (Copies from underscore.js)
+// Returns a function, that, when invoked, will only be triggered at most once
+// during a given window of time. Normally, the throttled function will run
+// as much as it can, without ever going more than once per `wait` duration;
+// but if you'd like to disable the execution on the leading edge, pass
+// `{leading: false}`. To disable execution on the trailing edge, ditto.
 function throttle(func, wait, options) {
   var context, args, result;
   var timeout = null;
@@ -28,6 +34,11 @@ function throttle(func, wait, options) {
   };
 }
 
+// (Copies from underscore.js)
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
 function debounce(func, wait, immediate) {
   var result;
   var timeout = null;
@@ -49,6 +60,8 @@ function debounce(func, wait, immediate) {
   };
 }
 
+// Creates the indicator, which is a small div lying in the lower left corner
+// of the window, showing the scroll progress.
 var indicator = document.createElement('div');
 indicator.style.position = 'fixed';
 indicator.style.left = '0';
@@ -71,6 +84,8 @@ function hide() {
   indicator.style.opacity = '0';
 }
 
+// Creates a debounced version of the hide function, so that the indicator
+// should be hide only when there's no scroll activity for 300ms.
 var debouncedHide = debounce(hide, 300);
 
 function scrollHandler() {
