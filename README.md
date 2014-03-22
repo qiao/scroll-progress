@@ -1,7 +1,7 @@
 Scroll Progress
 ===============
 
-A small chrome extension which shows the scroll progress of the current page.  
+A small chrome extension showing the scroll progress of current page.  
 Useful when reading a looooooooooong article.
 
 Screenshot

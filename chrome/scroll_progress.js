@@ -1,4 +1,4 @@
-// (Copies from underscore.js)
+// (Copied from underscore.js)
 // Returns a function, that, when invoked, will only be triggered at most once
 // during a given window of time. Normally, the throttled function will run
 // as much as it can, without ever going more than once per `wait` duration;
@@ -34,7 +34,7 @@ function throttle(func, wait, options) {
   };
 }
 
-// (Copies from underscore.js)
+// (Copied from underscore.js)
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
